@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Bebas Neue';
+}
+
+*:focus,
+*:hover {
+    outline: none !important;
+}
+
+@font-face {
+    src: url(../fonts/BebasNeue-Regular.otf);
+    font-family: 'Bebas Neue';
+}
+
+@font-face {
+    src: url(../fonts/Poppins.ttf);
+    font-family: 'Poppins';
+}
+
+
+/* home */
+
+
+/*.home-prev {
+    height: 100vh;
+    display: flex;
+}
+
+.home-prev img {
+    border-radius: 500px;
+    height: 10vw;
+    width: 10vw;
+    margin: auto;
+    z-index: 2;
+}*/
+
+
+/*.home .row {
+    height: 33.33%;
+}
+
+.home .row .col-sm-6 {
+    height: 100%;
+    display: flex;
+}
+
+.home .row .col-sm-6 button {
+    border: none;
+    background-color: transparent;
+    color: blue;
+    z-index: 1;
+    font-size: large;
+    font-weight: 700;
+}
+
+.home .row .col-sm-6:nth-child(odd) button {
+    transform: rotate(270deg);
+}
+
+.home .row .col-sm-6:nth-child(even) button {
+    transform: rotate(90deg);
+    margin-left: auto;
+}
+
+video#bgVideo,
+#target {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transition: 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.home .col-sm-6:after {
+    z-index: 0;
+    top: 0px;
+    bottom: 0px;
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.col-sm-6:hover video#bgVideo {
+    width: 100vw;
+    height: 100vh;
+    transition: 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.col-sm-6:hover~#target {
+    height: 0px;
+    width: 0px;
+}
+
+*/
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
+
+/*nav css*/
+
+.navdisplay {
+    top: 2%;
+    display: none;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 60px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    outline: none;
+}
+
+.navdisplay:after,
+.navdisplay:before,
+.navdisplay div {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 4px;
+    margin: 5px 0;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.navhide {
+    z-index: 1;
+    background-color: #000;
+    border-radius: 60px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navhide:after,
+.navhide:before,
+.navhide div {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 4px 0;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+}
+
+.navhide:before {
+    transform: translateY(9px) rotate(135deg);
+}
+
+.navhide:after {
+    transform: translateY(-10px) rotate(-135deg);
+}
+
+.navhide div {
+    transform: scale(0);
+}
+
+.setwidth {
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+}
+
+header div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 5;
+    color: #000;
+    padding: 0px 15px;
+}
+
+nav ul li a {
+    margin: 1vw;
+}
+
+button.butt {
+    color: #000;
+    margin: 2vh 0vh;
+}
+
+nav ul li a button {
+    border: none;
+    padding: 2%;
+    background-color: transparent;
+    font-weight: 500;
+    margin: 2vh 2vh;
+    margin-bottom: 0px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+
+/* nav ul li a button:hover:before,
+nav ul li a button:hover:after {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    margin-top: 1vh;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+} */
+
+nav ul li a button:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+
+.btn {
+    margin: auto 0vh;
+}
+
+.navbar-brand,
+.navbar-brand img {
+    height: 5vw;
+    width: 5vw;
+    margin-right: auto;
+}
+
+.social-media {
+    display: flex;
+    margin-right: auto;
+}
+
+.btn-instagram {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-instagram:hover,
+.btn-instagram:active {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-facebook {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-facebook:hover,
+.btn-facebook:active {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-whatsapp {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:active {
+    background-color: transparent;
+    border: none;
+}
+
+nav ul li:nth-child(6) {
+    display: none;
+}
+
+.nav-a:after {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    margin-top: 1vh;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.navbar.navbar-expand-md.setwidth {
+    margin-bottom: 0px;
+}
+
+.fa-instagram:before,
+.fa-whatsapp:before,
+.fa-facebook:before {
+    color: black;
+    font-size: x-large;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width:766px) {
+    .navbar-brand {
+        line-height: 0px;
+        height: fit-content;
+        height: -moz-fit-content;
+        height: -webkit-fit-content;
+        margin: 1.5%;
+        margin-right: auto;
+        display: block;
+    }
+    .navbar-brand img {
+        height: 12vh;
+        width: 12vh;
+    }
+    .navdisplay {
+        display: block;
+        margin: auto 0px;
+    }
+    .setwidth {
+        width: 100%;
+    }
+    section {
+        /* display: none; */
+        height: 25vh;
+    }
+    section div a img {
+        height: 15vh;
+    }
+    .navbar.navbar-expand-md.setwidth {
+        padding: 0px;
+        width: 100vw;
+        margin: 0px -30px;
+    }
+    nav ul li:nth-child(6) {
+        display: block;
+        margin: 3%;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    nav ul li a button:hover {
+        transform: none;
+    }
+    .social-media {
+        margin-right: 0;
+    }
+}
+
+
+/* end nav */
+
+
+/* home */
+
+.home {
+    height: 100vh;
+    top: 0px;
+    position: absolute;
+}
+
+.home .row {
+    height: 100%;
+}
+
+.home .row .col-sm-6 {
+    display: flex;
+    height: 100%;
+}
+
+.home .row .col-sm-6 .logo-tagline {
+    margin: auto;
+}
+
+.logo-tagline h1 {
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+.logo-tagline h3 {
+    font-family: 'Poppins';
+    font-size: x-large;
+    font-style: oblique;
+}
+
+@media screen and (max-width:766px) {
+    .logo-tagline h1 {
+        font-size: xxx-large;
+    }
+}
