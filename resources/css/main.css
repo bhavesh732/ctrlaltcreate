@@ -340,6 +340,14 @@ nav ul li:nth-child(6) {
     margin-bottom: auto;
 }
 
+.social-media {
+    display: none;
+}
+
+.social-media.d-none {
+    display: flex !important;
+}
+
 @media screen and (max-width:766px) {
     .navbar-brand {
         line-height: 0px;
@@ -385,6 +393,26 @@ nav ul li:nth-child(6) {
     }
     .social-media {
         margin-right: 0;
+        display: flex;
+    }
+    .social-media.d-none {
+        display: none !important;
+    }
+    /* different color */
+    header {
+        color: white !important;
+        background-color: black !important;
+    }
+    nav ul li a .butt {
+        color: #fff;
+    }
+    .nav-a:after {
+        background-color: #fff;
+    }
+    .fa-instagram:before,
+    .fa-whatsapp:before,
+    .fa-facebook:before {
+        color: white;
     }
 }
 
@@ -417,6 +445,7 @@ nav ul li:nth-child(6) {
 .logo-tagline h1 {
     font-size: 80px;
     margin-bottom: 0px;
+    font-weight: 700;
 }
 
 .logo-tagline h3 {
@@ -432,5 +461,8 @@ nav ul li:nth-child(6) {
 @media screen and (max-width:766px) {
     .logo-tagline h1 {
         font-size: xxx-large;
+    }
+    .logo-tagline {
+        text-align: center;
     }
 }
