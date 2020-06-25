@@ -217,6 +217,11 @@ header {
     padding: 0px 15px;
 }
 
+header.headerscroll {
+    background-color: #000;
+    color: #fff;
+}
+
 nav ul li a {
     margin: 1vw;
 }
@@ -224,6 +229,21 @@ nav ul li a {
 button.butt {
     color: #000;
     margin: 2vh 0vh;
+}
+
+header.headerscroll button.butt {
+    color: #fff;
+    margin: 2vh 0vh;
+}
+
+header.headerscroll .nav-a:after {
+    background-color: #fff;
+}
+
+header.headerscroll .fa-instagram:before,
+header.headerscroll .fa-whatsapp:before,
+header.headerscroll .fa-facebook:before {
+    color: #fff;
 }
 
 nav ul li a button {
@@ -399,7 +419,7 @@ nav ul li:nth-child(6) {
         display: none !important;
     }
     /* different color */
-    header {
+    /* header {
         color: white !important;
         background-color: black !important;
     }
@@ -413,7 +433,7 @@ nav ul li:nth-child(6) {
     .fa-whatsapp:before,
     .fa-facebook:before {
         color: white;
-    }
+    } */
 }
 
 
@@ -426,6 +446,7 @@ nav ul li:nth-child(6) {
     height: 100vh;
     top: 0px;
     position: absolute;
+    z-index: 0;
 }
 
 .home .container,

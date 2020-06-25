@@ -4,24 +4,34 @@ window.onscroll = function() {
 
 var prevScrollpos = window.pageYOffset;
 var nav = document.getElementsByTagName('button')[0];
+var header = document.getElementById('header');
 
 function hidefunction() {
     var currentScrollPos = window.pageYOffset;
     if (navbutton.className != "navbar-toggler navdisplay navhide") {
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("header").style.top = "0";
-            document.getElementById("header").style.transition = "0.5s";
-            // document.getElementById("header").style.position = "sticky";
+            header.style.top = "0";
+            header.style.transition = "0.5s";
+            // header.style.position = "sticky";
         } else {
-            document.getElementById("header").style.top = "-100px";
-            document.getElementById("header").style.transition = "0.5s";
-            // document.getElementById("header").style.position = "fixed";
+            header.style.top = "-100px";
+            header.style.transition = "0.5s";
+            // header.style.position = "fixed";
         }
         prevScrollpos = currentScrollPos;
     }
 }
 
+document.addEventListener("scroll", () => {
 
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        // header.style.backgroundColor = "black";
+        header.className = " headerscroll ";
+    } else {
+        // header.style.backgroundColor = "initial";
+        header.className = "  ";
+    }
+});
 
 var links = document.getElementsByClassName('butt');
 for (var i = 0; i < links.length; i++) {
