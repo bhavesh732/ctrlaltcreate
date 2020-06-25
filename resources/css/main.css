@@ -144,6 +144,7 @@ video#bgVideo,
     padding-top: 0px;
     padding-bottom: 0px;
     outline: none;
+    margin-right: auto;
 }
 
 .navdisplay:after,
@@ -271,7 +272,7 @@ nav ul li a button:hover {
 
 .social-media {
     display: flex;
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 .btn-instagram {
@@ -326,6 +327,8 @@ nav ul li:nth-child(6) {
 
 .navbar.navbar-expand-md.setwidth {
     margin-bottom: 0px;
+    padding: 8px 0px;
+    margin-right: auto;
 }
 
 .fa-instagram:before,
@@ -397,7 +400,8 @@ nav ul li:nth-child(6) {
     position: absolute;
 }
 
-.home .row {
+.home .container,
+.home .container .row {
     height: 100%;
 }
 
@@ -407,7 +411,7 @@ nav ul li:nth-child(6) {
 }
 
 .home .row .col-sm-6 .logo-tagline {
-    margin: auto;
+    margin: auto auto auto 0;
 }
 
 .logo-tagline h1 {
@@ -419,6 +423,10 @@ nav ul li:nth-child(6) {
     font-family: 'Poppins';
     font-size: x-large;
     font-style: oblique;
+}
+
+.logo-tagline img {
+    width: 70%;
 }
 
 @media screen and (max-width:766px) {
