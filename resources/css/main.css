@@ -369,12 +369,12 @@ nav ul li:nth-child(6) {
 }
 
 .header-heading {
-    font-size: x-large;
+    font-size: xx-large;
     color: white;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .one {
@@ -387,6 +387,7 @@ nav ul li:nth-child(6) {
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
+    margin: auto 0px;
 }
 
 .header-heading.animate-heading div {
@@ -536,3 +537,10 @@ nav ul li:nth-child(6) {
         text-align: center;
     }
 }
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
