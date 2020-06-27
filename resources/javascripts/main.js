@@ -5,6 +5,7 @@ window.onscroll = function() {
 var prevScrollpos = window.pageYOffset;
 var nav = document.getElementsByTagName('button')[0];
 var header = document.getElementById('header');
+var headerheadings = document.getElementsByClassName('header-heading');
 
 function hidefunction() {
     var currentScrollPos = window.pageYOffset;
@@ -12,10 +13,14 @@ function hidefunction() {
         if (prevScrollpos > currentScrollPos) {
             header.style.top = "0";
             header.style.transition = "0.5s";
+            headerheadings[0].className = "one header-heading animate-heading";
+            headerheadings[1].className = "two header-heading animate-heading";
             // header.style.position = "sticky";
         } else {
             header.style.top = "-100px";
             header.style.transition = "0.5s";
+            headerheadings[0].className = "one header-heading";
+            headerheadings[1].className = "two header-heading";
             // header.style.position = "fixed";
         }
         prevScrollpos = currentScrollPos;

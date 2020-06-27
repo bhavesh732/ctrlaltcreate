@@ -144,7 +144,7 @@ video#bgVideo,
     padding-top: 0px;
     padding-bottom: 0px;
     outline: none;
-    margin-right: auto;
+    margin: 5px auto 5px 0px;
 }
 
 .navdisplay:after,
@@ -348,7 +348,7 @@ nav ul li:nth-child(6) {
 .navbar.navbar-expand-md.setwidth {
     margin-bottom: 0px;
     padding: 8px 0px;
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 .fa-instagram:before,
@@ -368,7 +368,54 @@ nav ul li:nth-child(6) {
     display: flex !important;
 }
 
+.header-heading {
+    font-size: x-large;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 900;
+}
+
+.one {
+    display: none;
+}
+
+.header-heading div {
+    transform: translateY(-100px);
+    visibility: hidden;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.header-heading.animate-heading div {
+    transform: translateY(0px);
+    visibility: visible;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.header-heading.animate-heading div:nth-child(2) {
+    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+}
+
+.header-heading.animate-heading div:nth-child(3) {
+    transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+}
+
 @media screen and (max-width:766px) {
+    .one {
+        display: flex;
+    }
+    .two {
+        display: none;
+    }
     .navbar-brand {
         line-height: 0px;
         height: fit-content;
@@ -384,7 +431,7 @@ nav ul li:nth-child(6) {
     }
     .navdisplay {
         display: block;
-        margin: auto 0px;
+        /* margin: auto 0px; */
     }
     .setwidth {
         width: 100%;
