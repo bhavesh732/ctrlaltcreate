@@ -30,10 +30,8 @@ function hidefunction() {
 document.addEventListener("scroll", () => {
 
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        // header.style.backgroundColor = "black";
         header.className = " headerscroll ";
     } else {
-        // header.style.backgroundColor = "initial";
         header.className = "  ";
     }
 });

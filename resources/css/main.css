@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0px;
     overflow-x: hidden;
-    font-family: 'Bebas Neue';
+    background-color: #37414A;
+    font-family: 'Poppins';
 }
 
 * {
@@ -211,7 +212,7 @@ header div.container {
 header {
     position: sticky;
     top: 0px;
-    background-color: #fff;
+    background-color: #D2CECD;
     z-index: 5;
     color: #000;
     padding: 0px 15px;
@@ -219,7 +220,7 @@ header {
 
 header.headerscroll {
     background-color: #000;
-    color: #fff;
+    color: #D2CECD;
 }
 
 nav ul li a {
@@ -232,18 +233,18 @@ button.butt {
 }
 
 header.headerscroll button.butt {
-    color: #fff;
+    color: #D2CECD;
     margin: 2vh 0vh;
 }
 
 header.headerscroll .nav-a:after {
-    background-color: #fff;
+    background-color: #D2CECD;
 }
 
 header.headerscroll .fa-instagram:before,
 header.headerscroll .fa-whatsapp:before,
 header.headerscroll .fa-facebook:before {
-    color: #fff;
+    color: #D2CECD;
 }
 
 nav ul li a button {
@@ -273,10 +274,30 @@ nav ul li a button:hover:after {
     -webkit-transition: 1s;
 } */
 
-nav ul li a button:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
+nav ul li a button:hover:after {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    margin-top: 1vh;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+nav ul li a button:after {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: black;
+    margin-top: 1vh;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .btn {
@@ -370,7 +391,8 @@ nav ul li:nth-child(6) {
 
 .header-heading {
     font-size: xx-large;
-    color: white;
+    font-family: 'Bebas Neue';
+    color: #D2CECD;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -468,19 +490,19 @@ nav ul li:nth-child(6) {
     }
     /* different color */
     /* header {
-        color: white !important;
+        color: #D2CECD !important;
         background-color: black !important;
     }
     nav ul li a .butt {
-        color: #fff;
+        color: #D2CECD;
     }
     .nav-a:after {
-        background-color: #fff;
+        background-color: #D2CECD;
     }
     .fa-instagram:before,
     .fa-whatsapp:before,
     .fa-facebook:before {
-        color: white;
+        color: #D2CECD;
     } */
 }
 
@@ -544,3 +566,15 @@ nav ul li:nth-child(6) {
     color: #0f0 !important;
     outline: solid #f00 1px !important;
 } */
+
+
+/* home */
+
+.home h1 {
+    font-family: 'Bebas Neue';
+}
+
+.home h1,
+.home h3 {
+    color: #D2CECD;
+}
