@@ -1,3 +1,5 @@
+/* #D2CECD */
+
 body {
     margin: 0;
     padding: 0px;
@@ -54,96 +56,6 @@ body {
     src: url(../fonts/Poppins.ttf);
     font-family: 'Poppins';
 }
-
-
-/* home */
-
-
-/*.home-prev {
-    height: 100vh;
-    display: flex;
-}
-
-.home-prev img {
-    border-radius: 500px;
-    height: 10vw;
-    width: 10vw;
-    margin: auto;
-    z-index: 2;
-}*/
-
-
-/*.home .row {
-    height: 33.33%;
-}
-
-.home .row .col-lg-6 {
-    height: 100%;
-    display: flex;
-}
-
-.home .row .col-lg-6 button {
-    border: none;
-    background-color: transparent;
-    color: blue;
-    z-index: 1;
-    font-size: large;
-    font-weight: 700;
-}
-
-.home .row .col-lg-6:nth-child(odd) button {
-    transform: rotate(270deg);
-}
-
-.home .row .col-lg-6:nth-child(even) button {
-    transform: rotate(90deg);
-    margin-left: auto;
-}
-
-video#bgVideo,
-#target {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    transition: 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-}
-
-.home .col-lg-6:after {
-    z-index: 0;
-    top: 0px;
-    bottom: 0px;
-    background-color: black;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-}
-
-.col-lg-6:hover video#bgVideo {
-    width: 100vw;
-    height: 100vh;
-    transition: 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-}
-
-.col-lg-6:hover~#target {
-    height: 0px;
-    width: 0px;
-}
-
-*/
-
-
-/* * {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-} */
 
 
 /*nav css*/
@@ -222,7 +134,7 @@ video#bgVideo,
     width: -webkit-fit-content;
 }
 
-header div.container {
+header div.container-fluid {
     display: flex;
     flex-wrap: wrap;
 }
@@ -230,7 +142,7 @@ header div.container {
 header {
     position: sticky;
     top: 0px;
-    background-color: #D2CECD;
+    background-color: black;
     z-index: 5;
     color: #000;
     padding: 0px 15px;
@@ -238,7 +150,7 @@ header {
 
 header.headerscroll {
     background-color: #000;
-    color: #D2CECD;
+    color: white;
 }
 
 nav ul li a {
@@ -246,17 +158,17 @@ nav ul li a {
 }
 
 button.butt {
-    color: #000;
+    color: #fff;
     margin: 2vh 0vh;
 }
 
 header.headerscroll button.butt {
-    color: #D2CECD;
+    color: white;
     margin: 2vh 0vh;
 }
 
 header.headerscroll .nav-a:after {
-    background-color: #D2CECD;
+    background-color: white;
 }
 
 header.headerscroll .fa-instagram:before,
@@ -264,7 +176,7 @@ header.headerscroll .fa-whatsapp:before,
 header.headerscroll .fa-linkedin:before,
 header.headerscroll .fa-twitter:before,
 header.headerscroll .fa-facebook:before {
-    color: #D2CECD;
+    color: white;
 }
 
 nav ul li a button {
@@ -302,7 +214,7 @@ nav ul li a button:hover:after {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: black;
+    background-color: #fff;
     margin-top: 1vh;
     transition: 0.5s;
     -moz-transition: 0.5s;
@@ -315,7 +227,7 @@ nav ul li a button:after {
     display: block;
     height: 5px;
     width: 0%;
-    background-color: black;
+    background-color: #fff;
     margin-top: 1vh;
     transition: 0.5s;
     -moz-transition: 0.5s;
@@ -328,7 +240,7 @@ nav ul li a button:after {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: #D2CECD;
+    background-color: white;
     margin-top: 1vh;
     transition: 0.5s;
     -moz-transition: 0.5s;
@@ -341,7 +253,7 @@ nav ul li a button:after {
     display: block;
     height: 5px;
     width: 0%;
-    background-color: #D2CECD;
+    background-color: white;
     margin-top: 1vh;
     transition: 0.5s;
     -moz-transition: 0.5s;
@@ -439,7 +351,7 @@ nav ul li:nth-child(6) {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: black;
+    background-color: #fff;
     margin-top: 1vh;
     transition: 1s;
     -moz-transition: 1s;
@@ -454,8 +366,10 @@ nav ul li:nth-child(6) {
 
 .fa-instagram:before,
 .fa-whatsapp:before,
+.fa-linkedin:before,
+.fa-twitter:before,
 .fa-facebook:before {
-    color: black;
+    color: white;
     font-size: x-large;
     margin-top: auto;
     margin-bottom: auto;
@@ -472,7 +386,6 @@ nav ul li:nth-child(6) {
 .header-heading {
     font-size: xx-large;
     font-family: 'Bebas Neue';
-    color: #D2CECD;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -586,19 +499,19 @@ nav ul li:nth-child(6) {
     }
     /* different color */
     /* header {
-        color: #D2CECD !important;
+        color: white !important;
         background-color: black !important;
     }
     nav ul li a .butt {
-        color: #D2CECD;
+        color: white;
     }
     .nav-a:after {
-        background-color: #D2CECD;
+        background-color: white;
     }
     .fa-instagram:before,
     .fa-whatsapp:before,
     .fa-facebook:before {
-        color: #D2CECD;
+        color: white;
     } */
 }
 
@@ -663,21 +576,21 @@ nav ul li:nth-child(6) {
 .home h1,
 .home h2,
 .home h3 {
-    color: #D2CECD;
+    color: white;
 }
 
 .services {
     padding: 15px;
-    background-color: white;
+    background-color: #5a7083;
 }
 
 .services h2 {
-    color: #37414A;
+    color: white;
 }
 
 .services .col-12 {
     padding: 15px;
-    /* background-color: #D2CECD; */
+    /* background-color: white; */
     /* border: 0.1px solid grey; */
     /* border-radius: 5px;
     box-shadow: 4px 7px black; */
@@ -695,7 +608,7 @@ nav ul li:nth-child(6) {
     font-size: xxx-large;
     width: 100%;
     margin: auto;
-    color: #37414A;
+    color: white;
 }
 
 @media screen and (max-width:800px) {
@@ -722,8 +635,11 @@ nav ul li:nth-child(6) {
         margin-right: 0px;
         margin-left: 0px;
     }
-    .home .row .col-lg-6 {
-        height: 50%;
+    .home .row .col-lg-6:nth-child(1) {
+        height: 55%;
+    }
+    .home .row .col-lg-6:nth-child(2) {
+        height: 40%;
     }
     .home .row .col-lg-6 li {
         font-size: 34.5px;
@@ -736,5 +652,7 @@ nav ul li:nth-child(6) {
         height: 140vh;
         padding: 0px;
     }
-    .home .row .col-lg-6 {}
+    .services .logo-tagline {
+        padding: 0px;
+    }
 }
