@@ -179,7 +179,8 @@ header.headerscroll .fa-facebook:before {
     color: white;
 }
 
-nav ul li a button {
+nav ul li a button,
+.dropdown button {
     border: none;
     padding: 2%;
     background-color: transparent;
@@ -188,6 +189,7 @@ nav ul li a button {
     margin-bottom: 0px;
     font-size: large;
     text-transform: uppercase;
+    color: #fff;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -255,6 +257,62 @@ nav ul li a button:after {
     width: 0%;
     background-color: white;
     margin-top: 1vh;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+nav ul li a button:hover:before {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 1vh;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+nav ul li a button:before {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #fff;
+    margin-bottom: 1vh;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.headerscroll nav ul li a button:hover:before {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1vh;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+ul.dropdown-menu {
+    background-color: #000;
+}
+
+.headerscroll nav ul li a button:before {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: white;
+    margin-bottom: 1vh;
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -341,10 +399,6 @@ nav ul li a button:after {
     border: none;
 }
 
-nav ul li:nth-child(6) {
-    display: none;
-}
-
 .nav-a:after {
     border-radius: 3px;
     content: '';
@@ -373,6 +427,16 @@ nav ul li:nth-child(6) {
     font-size: x-large;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.btn .fa {
+    width: fit-content!important;
+}
+
+.dropdown-menu li a {
+    font-size: large;
+    color: white;
+    width: fit-content;
 }
 
 .social-media {
@@ -423,6 +487,10 @@ nav ul li:nth-child(6) {
     transition-delay: 1s;
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
+}
+
+.btn:hover {
+    color: white;
 }
 
 @media screen and (max-width:800px) {
@@ -489,13 +557,13 @@ nav ul li:nth-child(6) {
     }
     .btn {
         padding: 0;
-        width: 15.75px;
         margin: auto;
         margin-left: 5px;
         margin-right: 5px;
     }
-    .btn .fa {
-        width: fit-content!important;
+    .fa,
+    .btn {
+        width: 15.75px!important;
     }
     /* different color */
     /* header {
@@ -522,7 +590,7 @@ nav ul li:nth-child(6) {
 /* home */
 
 .home {
-    height: 100vh;
+    /* height: 100vh; */
     top: 0px;
     padding: 0;
     z-index: 0;
@@ -533,10 +601,11 @@ nav ul li:nth-child(6) {
     height: 100%;
 }
 
-.home .row .col-lg-6 {
+
+/* .home .row .col-lg-6 {
     display: flex;
     height: 100%;
-}
+} */
 
 .home .row .col-lg-6 .logo-tagline {
     margin: auto auto auto 0;
@@ -565,7 +634,7 @@ nav ul li:nth-child(6) {
 }
 
 .logo-tagline img {
-    width: 65%;
+    width: 32.5%;
 }
 
 .home h1,
@@ -623,9 +692,12 @@ nav ul li:nth-child(6) {
     .logo-tagline {
         text-align: center;
     }
-    .home {
+    /* .home {
         height: 160vh;
         padding: 0px;
+    } */
+    .logo-tagline img {
+        width: 65%;
     }
     .home .container-fluid,
     .services {
@@ -635,12 +707,12 @@ nav ul li:nth-child(6) {
         margin-right: 0px;
         margin-left: 0px;
     }
-    .home .row .col-lg-6:nth-child(1) {
+    /* .home .row .col-lg-6:nth-child(1) {
         height: 55%;
     }
     .home .row .col-lg-6:nth-child(2) {
         height: 40%;
-    }
+    } */
     .home .row .col-lg-6 li {
         font-size: 34.5px;
         text-align: left;
@@ -648,10 +720,10 @@ nav ul li:nth-child(6) {
 }
 
 @media screen and (max-width:766px) {
-    .home {
+    /* .home {
         height: 140vh;
         padding: 0px;
-    }
+    } */
     .services .logo-tagline {
         padding: 0px;
     }
