@@ -735,7 +735,7 @@ ul.dropdown-menu {
 
 .what-we-do {
     background-color: #D2CECD;
-    height: 100%;
+    height: fit-content;
 }
 
 .what-we-do h5 {
@@ -754,6 +754,7 @@ ul.dropdown-menu {
 .what-we-do .card {
     background-color: white;
     height: 140px;
+    border-radius: 0;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -777,7 +778,7 @@ ul.dropdown-menu {
 }
 
 .what-we-do .col-sm-3,
-.what-we-do .col-xl-3 {
+.what-we-do .col-xl-6 {
     padding: 5px;
 }
 
@@ -794,10 +795,6 @@ ul.dropdown-menu {
 }
 
 @media screen and (max-width:766px) {
-    .what-we-do {
-        background-color: #D2CECD;
-        height: fit-content;
-    }
     .what-we-do h5 {
         color: #37414A;
         text-align: center;
