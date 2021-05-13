@@ -770,11 +770,15 @@ ul.dropdown-menu {
     font-weight: 600;
 }
 
-.what-we-do .fas,
-.what-we-do .fa {
+.what-we-do .fas {
     right: 10px;
     bottom: 10px;
     position: absolute;
+}
+
+.what-we-do .col-sm-3,
+.what-we-do .col-xl-3 {
+    padding: 5px;
 }
 
 .what-we-do .fas:before,
@@ -783,6 +787,50 @@ ul.dropdown-menu {
     font-size: 70px!important;
 }
 
-.what-we-do .col-sm-3 {
-    padding: 5px;
+.what-we-do .fa:before {
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+}
+
+@media screen and (max-width:766px) {
+    .what-we-do {
+        background-color: #D2CECD;
+        height: fit-content;
+    }
+    .what-we-do h5 {
+        color: #37414A;
+        text-align: center;
+    }
+    .what-we-do h1 {
+        font-size: xxx-large;
+        margin-bottom: 0px;
+        font-weight: 700;
+        color: #37414A;
+        text-align: center;
+    }
+    .what-we-do .card {
+        background-color: white;
+        height: 140px;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+    }
+    .what-we-do .card:hover {
+        box-shadow: 2px 3.5px black;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+    }
+    .what-we-do .card h3 {
+        font-weight: 600;
+    }
+    .what-we-do .fas {
+        right: 10px;
+        bottom: 10px;
+        position: absolute;
+    }
+    .what-we-do .col-sm-3 {
+        padding: 5px;
+    }
 }
