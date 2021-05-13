@@ -5,7 +5,7 @@ body {
     padding: 0px;
     overflow-x: hidden!important;
     background-color: #37414A;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins';
 }
 
 ::-webkit-scrollbar {
@@ -630,7 +630,7 @@ ul.dropdown-menu {
 .logo-tagline h3 {
     font-size: x-large;
     font-style: oblique;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins';
 }
 
 .logo-tagline img {
@@ -638,7 +638,8 @@ ul.dropdown-menu {
 }
 
 .home h1,
-.home h2 {
+.home h2,
+.what-we-do h1 {
     font-family: 'Bebas Neue';
 }
 
@@ -727,4 +728,61 @@ ul.dropdown-menu {
     .services .logo-tagline {
         padding: 0px;
     }
+}
+
+
+/* about */
+
+.what-we-do {
+    background-color: #D2CECD;
+    height: 100%;
+}
+
+.what-we-do h5 {
+    color: #37414A;
+    text-align: center;
+}
+
+.what-we-do h1 {
+    font-size: 80px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: #37414A;
+    text-align: center;
+}
+
+.what-we-do .card {
+    background-color: white;
+    height: 140px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+
+.what-we-do .card:hover {
+    box-shadow: 2px 3.5px black;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+
+.what-we-do .card h3 {
+    font-weight: 600;
+}
+
+.what-we-do .fas,
+.what-we-do .fa {
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.what-we-do .fas:before,
+.what-we-do .fa:before {
+    color: #000;
+    font-size: 70px!important;
+}
+
+.what-we-do .col-sm-3 {
+    padding: 5px;
 }
