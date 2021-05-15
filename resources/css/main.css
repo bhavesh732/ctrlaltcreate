@@ -629,7 +629,6 @@ ul.dropdown-menu {
 
 .logo-tagline h3 {
     font-size: x-large;
-    font-style: oblique;
     font-family: 'Poppins';
 }
 
@@ -734,7 +733,7 @@ ul.dropdown-menu {
 /* about */
 
 .what-we-do {
-    background-color: #D2CECD;
+    background-color: #f0e7e5;
     height: fit-content;
 }
 
@@ -761,7 +760,7 @@ ul.dropdown-menu {
 }
 
 .what-we-do .card:hover {
-    box-shadow: 2px 3.5px black;
+    box-shadow: 3px 5px 5px black;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -830,4 +829,12 @@ ul.dropdown-menu {
     .what-we-do .col-sm-3 {
         padding: 5px;
     }
+}
+
+
+/* footer */
+
+footer {
+    background-color: #000;
+    height: fit-content;
 }
