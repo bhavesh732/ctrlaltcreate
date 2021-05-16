@@ -67,7 +67,7 @@ body {
     width: 50px;
     height: 50px;
     padding: 10px;
-    background-color: #000;
+    background-color: black;
     border-radius: 60px;
     transition: 1s;
     -webkit-transition: 1s;
@@ -94,7 +94,7 @@ body {
 
 .navhide {
     z-index: 1;
-    background-color: #000;
+    background-color: black;
     border-radius: 60px;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -144,12 +144,12 @@ header {
     top: 0px;
     background-color: black;
     z-index: 5;
-    color: #000;
+    color: black;
     padding: 0px 15px;
 }
 
 header.headerscroll {
-    background-color: #000;
+    background-color: black;
     color: white;
 }
 
@@ -302,7 +302,7 @@ nav ul li a button:before {
 }
 
 ul.dropdown-menu {
-    background-color: #000;
+    background-color: black;
 }
 
 .headerscroll nav ul li a button:before {
@@ -318,13 +318,14 @@ ul.dropdown-menu {
     -webkit-transition: 0.5s;
 }
 
-.btn {
+header .btn {
     margin: auto 0vh;
 }
 
 .fa::before {
     font-weight: 600;
     font-size: large!important;
+    margin: auto;
 }
 
 .navbar-brand,
@@ -339,61 +340,61 @@ ul.dropdown-menu {
     /* margin-right: auto; */
 }
 
-.btn-instagram {
+header .btn-instagram {
     background-color: transparent;
     border: none;
 }
 
-.btn-instagram:hover,
-.btn-instagram:active {
+header .btn-instagram:hover,
+header .btn-instagram:active {
     transform: translateY(-2px);
     background-color: transparent;
     border: none;
 }
 
-.btn-facebook {
+header .btn-facebook {
     background-color: transparent;
     border: none;
 }
 
-.btn-twitter {
+header .btn-twitter {
     background-color: transparent;
     border: none;
 }
 
-.btn-linkedin {
+header .btn-linkedin {
     background-color: transparent;
     border: none;
 }
 
-.btn-facebook:hover,
-.btn-facebook:active {
+header .btn-facebook:hover,
+header .btn-facebook:active {
     transform: translateY(-2px);
     background-color: transparent;
     border: none;
 }
 
-.btn-linkedin:hover,
-.btn-linkedin:active {
+header .btn-linkedin:hover,
+header .btn-linkedin:active {
     transform: translateY(-2px);
     background-color: transparent;
     border: none;
 }
 
-.btn-twitter:hover,
-.btn-twitter:active {
+header .btn-twitter:hover,
+header .btn-twitter:active {
     transform: translateY(-2px);
     background-color: transparent;
     border: none;
 }
 
-.btn-whatsapp {
+header .btn-whatsapp {
     background-color: transparent;
     border: none;
 }
 
-.btn-whatsapp:hover,
-.btn-whatsapp:active {
+header .btn-whatsapp:hover,
+header .btn-whatsapp:active {
     transform: translateY(-2px);
     background-color: transparent;
     border: none;
@@ -429,7 +430,7 @@ ul.dropdown-menu {
     margin-bottom: auto;
 }
 
-.btn .fa {
+header .btn .fa {
     width: fit-content!important;
 }
 
@@ -489,7 +490,7 @@ ul.dropdown-menu {
     -moz-transition-delay: 1s;
 }
 
-.btn:hover {
+header .btn:hover {
     color: white;
 }
 
@@ -555,14 +556,14 @@ ul.dropdown-menu {
     .social-media.d-none {
         display: none !important;
     }
-    .btn {
+    header .btn {
         padding: 0;
         margin: auto;
         margin-left: 5px;
         margin-right: 5px;
     }
     .fa,
-    .btn {
+    header .btn {
         width: 15.75px!important;
     }
     /* different color */
@@ -733,7 +734,7 @@ ul.dropdown-menu {
 /* about */
 
 .what-we-do {
-    background-color: #f0e7e5;
+    background-color: #d1cecd;
     height: fit-content;
 }
 
@@ -777,14 +778,15 @@ ul.dropdown-menu {
 }
 
 .what-we-do .col-sm-3,
-.what-we-do .col-xl-6 {
+.what-we-do .col-xl-3 {
     padding: 5px;
 }
 
 .what-we-do .fas:before,
 .what-we-do .fa:before {
-    color: #000;
+    color: black;
     font-size: 70px!important;
+    margin: auto;
 }
 
 .what-we-do .fa:before {
@@ -835,6 +837,90 @@ ul.dropdown-menu {
 /* footer */
 
 footer {
-    background-color: #000;
+    background-color: black;
     height: fit-content;
+}
+
+footer * {
+    color: #fff;
+}
+
+footer ul {
+    padding-left: 0px!important;
+}
+
+footer h4 {
+    font-weight: 900;
+}
+
+footer li {
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+footer .col-lg-3.col-md-6:nth-child(1),
+footer .col-lg-3.col-md-6:nth-child(2),
+footer .col-lg-3.col-md-6:nth-child(3) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer .btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 200px;
+    margin-right: 10px;
+}
+
+footer a,
+footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+footer .btn .fa {
+    display: flex;
+    padding: 0px 3px;
+}
+
+footer .pt-md-4.pb-md-4 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer img {
+    width: 50%;
+}
+
+footer .name {
+    font-family: 'Bebas Neue';
+}
+
+footer .row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.copyright {
+    font-size: small;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width:800px) {
+    footer .col-lg-3.col-md-6 {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    footer .col-lg-3.col-md-6:nth-child(even) {
+        border-right: none;
+    }
+    footer .row {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width:766px) {
+    footer .col-lg-3.col-md-6:nth-child(1),
+    footer .col-lg-3.col-md-6:nth-child(2),
+    footer .col-lg-3.col-md-6:nth-child(3) {
+        border-right: none;
+    }
+    footer .pt-md-4.pb-md-4 {
+        border-bottom: none
+    }
 }
