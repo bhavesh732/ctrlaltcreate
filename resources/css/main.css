@@ -616,10 +616,6 @@ header .btn:hover {
     margin: auto auto auto 0;
 }
 
-.logo-tagline {
-    width: fit-content;
-}
-
 .logo-tagline h1 {
     font-size: 80px;
     margin-bottom: 0px;
