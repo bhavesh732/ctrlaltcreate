@@ -57,12 +57,6 @@ body {
 }
 
 @font-face {
-    src: url(../fonts/DancingScript.ttf);
-    font-family: 'Dancing Script';
-    font-display: swap;
-}
-
-@font-face {
     src: url(../fonts/Poppins.ttf);
     font-family: 'Poppins';
     font-display: swap;
@@ -779,7 +773,7 @@ header .btn:hover {
 .what-we-do .card {
     background-color: white;
     height: 150px;
-    border-radius: 0;
+    border-radius: 3px;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
