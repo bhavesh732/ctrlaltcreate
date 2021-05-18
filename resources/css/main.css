@@ -463,6 +463,7 @@ header .btn .fa {
     font-size: xx-large;
     font-family: 'Bebas Neue';
     margin: auto;
+    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
     font-weight: 700;
@@ -562,6 +563,7 @@ header .btn:hover {
     }
     .social-media {
         margin-right: 0;
+        width: 100%;
         display: flex;
     }
     .social-media.d-none {
@@ -570,12 +572,9 @@ header .btn:hover {
     header .btn {
         padding: 0;
         margin: auto;
-        margin-left: 5px;
-        margin-right: 5px;
     }
-    .fa,
-    header .btn {
-        width: 15.75px!important;
+    .social-media .fa:before {
+        font-size: x-large!important;
     }
     /* different color */
     /* header {
