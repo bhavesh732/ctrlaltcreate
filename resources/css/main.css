@@ -1,10 +1,13 @@
 /* #D2CECD */
 
+
+/* #37414A */
+
 body {
     margin: 0;
     padding: 0px;
     overflow-x: hidden!important;
-    background-color: #37414A;
+    background-color: #007ea7;
     font-family: 'Poppins';
 }
 
@@ -50,11 +53,19 @@ body {
 @font-face {
     src: url(../fonts/BebasNeue-Regular.otf);
     font-family: 'Bebas Neue';
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../fonts/DancingScript.ttf);
+    font-family: 'Dancing Script';
+    font-display: swap;
 }
 
 @font-face {
     src: url(../fonts/Poppins.ttf);
     font-family: 'Poppins';
+    font-display: swap;
 }
 
 
@@ -67,7 +78,7 @@ body {
     width: 50px;
     height: 50px;
     padding: 10px;
-    background-color: black;
+    background-color: #00171f;
     border-radius: 60px;
     transition: 1s;
     -webkit-transition: 1s;
@@ -94,7 +105,7 @@ body {
 
 .navhide {
     z-index: 1;
-    background-color: black;
+    background-color: #00171f;
     border-radius: 60px;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -142,14 +153,14 @@ header div.container-fluid {
 header {
     position: sticky;
     top: 0px;
-    background-color: black;
+    background-color: #00171f;
     z-index: 5;
-    color: black;
+    color: #00171f;
     padding: 0px 15px;
 }
 
 header.headerscroll {
-    background-color: black;
+    background-color: #00171f;
     color: white;
 }
 
@@ -203,7 +214,7 @@ nav ul li a button:hover:after {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: black;
+    background-color: #00171f;
     margin-top: 1vh;
     transition: 1s;
     -moz-transition: 1s;
@@ -302,7 +313,7 @@ nav ul li a button:before {
 }
 
 ul.dropdown-menu {
-    background-color: black;
+    background-color: #00171f;
 }
 
 .headerscroll nav ul li a button:before {
@@ -569,7 +580,7 @@ header .btn:hover {
     /* different color */
     /* header {
         color: white !important;
-        background-color: black !important;
+        background-color: #00171f !important;
     }
     nav ul li a .butt {
         color: white;
@@ -663,7 +674,7 @@ header .btn:hover {
     /* background-color: white; */
     /* border: 0.1px solid grey; */
     /* border-radius: 5px;
-    box-shadow: 4px 7px black; */
+    box-shadow: 4px 7px #00171f; */
 }
 
 .services .logo-tagline {
@@ -734,26 +745,41 @@ header .btn:hover {
 /* about */
 
 .what-we-do {
-    background-color: #d1cecd;
     height: fit-content;
 }
 
 .what-we-do h5 {
-    color: #37414A;
+    color: #007ea7;
     text-align: center;
 }
 
 .what-we-do h1 {
+    text-shadow: 2px 3.5px #00171f;
     font-size: 80px;
     margin-bottom: 0px;
     font-weight: 700;
-    color: #37414A;
+    color: white;
     text-align: center;
+    position: relative;
 }
+
+
+/* .what-we-do h1:before {
+    content: 'What do We Do?';
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 100px;
+    position: absolute;
+    z-index: 1;
+    color: rgba(0, 23, 31, 0.1);
+    font-family: 'Dancing Script';
+    top: -90px;
+    right: 0;
+} */
 
 .what-we-do .card {
     background-color: white;
-    height: 140px;
+    height: 150px;
     border-radius: 0;
     transition: 1s;
     -webkit-transition: 1s;
@@ -761,7 +787,7 @@ header .btn:hover {
 }
 
 .what-we-do .card:hover {
-    box-shadow: 3px 5px 5px black;
+    box-shadow: 3px 5px 5px #00171f;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -784,7 +810,7 @@ header .btn:hover {
 
 .what-we-do .fas:before,
 .what-we-do .fa:before {
-    color: black;
+    color: #00171f;
     font-size: 70px!important;
     margin: auto;
 }
@@ -795,16 +821,31 @@ header .btn:hover {
     position: absolute;
 }
 
+.what-we-do button {
+    background-color: transparent;
+    /* background-color: #045874; */
+    border-radius: 3px;
+    /* border-bottom-right-radius: 20px; */
+    color: #045874;
+    font-weight: 600;
+    font-size: large;
+    padding: 5px 10px;
+    bottom: 10px;
+    border: 2px solid #045874;
+    box-shadow: 0px 1px 10px grey;
+    position: absolute;
+}
+
 @media screen and (max-width:766px) {
     .what-we-do h5 {
-        color: #37414A;
+        color: #007ea7;
         text-align: center;
     }
     .what-we-do h1 {
         font-size: xxx-large;
         margin-bottom: 0px;
         font-weight: 700;
-        color: #37414A;
+        color: #fff;
         text-align: center;
     }
     .what-we-do .card {
@@ -815,7 +856,7 @@ header .btn:hover {
         -moz-transition: 1s;
     }
     .what-we-do .card:hover {
-        box-shadow: 2px 3.5px black;
+        box-shadow: 3px 5px 5px #00171f;
         transition: 1s;
         -webkit-transition: 1s;
         -moz-transition: 1s;
@@ -837,7 +878,7 @@ header .btn:hover {
 /* footer */
 
 footer {
-    background-color: black;
+    background-color: #00171f;
     height: fit-content;
 }
 
@@ -923,4 +964,19 @@ footer .row {
     footer .pt-md-4.pb-md-4 {
         border-bottom: none
     }
+}
+
+
+/* modal */
+
+.modal {
+    backdrop-filter: blur(8px);
+}
+
+.modal.fade.show {
+    display: flex!important;
+}
+
+.modal-dialog {
+    margin: auto;
 }
