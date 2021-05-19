@@ -2,6 +2,18 @@ window.onscroll = function() {
     hidefunction();
 }
 
+window.onload = function() {
+    removeLoading();
+}
+
+function removeLoading() {
+    $('.logo-tagline').removeClass('loading');
+    setTimeout(() => {
+        $('.loading-div').addClass('loaded');
+        $('.loading-body').removeClass('loading-body');
+    }, 2000)
+}
+
 var prevScrollpos = window.pageYOffset;
 var nav = document.getElementsByTagName('button')[0];
 var header = document.getElementById('header');

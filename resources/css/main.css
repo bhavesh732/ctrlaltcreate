@@ -42,7 +42,7 @@ body {
     /* Internet Explorer/Edge */
     user-select: none;
     outline: none;
-    z-index: 1;
+    z-index: 0;
 }
 
 *:focus,
@@ -148,7 +148,7 @@ header {
     position: sticky;
     top: 0px;
     background-color: #00171f;
-    z-index: 5;
+    z-index: 0;
     color: #00171f;
     padding: 0px 15px;
 }
@@ -594,11 +594,16 @@ header .btn:hover {
 
 /* home */
 
+.loading-body .home {
+    z-index: 2;
+}
+
 .home {
     /* height: 100vh; */
     top: 0px;
     padding: 0;
-    z-index: 0;
+    z-index: -1;
+    position: relative;
 }
 
 .home .container-fluid,
@@ -612,25 +617,83 @@ header .btn:hover {
     height: 100%;
 } */
 
-.home .row .col-lg-6 .logo-tagline {
-    margin: auto auto auto 0;
+.home .row .col-lg-12 .logo-tagline {
+    margin: auto;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 2;
+}
+
+.logo-tagline * {
+    z-index: 2!important;
+    position: relative;
+}
+
+.logo-tagline svg g {
+    fill: #00171f;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
 }
 
 .logo-tagline h1 {
     font-size: 80px;
     margin-bottom: 0px;
     font-weight: 700;
-}
-
-.logo-tagline h2 {
-    font-size: 60px;
-    margin-bottom: 0px;
-    font-weight: 700;
+    z-index: 1;
 }
 
 .logo-tagline h3 {
     font-size: x-large;
     font-family: 'Poppins';
+}
+
+.logo-tagline h3 {
+    transition-delay: 1s!important;
+    -webkit-transition-delay: 1s!important;
+    -moz-transition-delay: 1s!important;
+}
+
+.logo-tagline h1 {
+    transition-delay: 0.5s!important;
+    -webkit-transition-delay: 0.5s!important;
+    -moz-transition-delay: 0.5s!important;
+}
+
+.logo-tagline h1,
+.logo-tagline svg,
+.logo-tagline h3 {
+    overflow-y: hidden;
+    transform: translateY(0px);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.logo-tagline.loading h1,
+.logo-tagline.loading h3,
+.logo-tagline.loading svg {
+    overflow-y: hidden;
+    transform: translateY(500px);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+
+.logo-tagline.loading h1,
+.logo-tagline.loading h3 {
+    color: #000;
+}
+
+.logo-tagline.loading svg g {
+    fill: #fff;
+}
+
+.logo-tagline.loading svg g path {
+    stroke-width: 10px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
 }
 
 .logo-tagline img {
@@ -985,4 +1048,26 @@ footer .row {
     right: 15px;
     position: absolute;
     color: #fff;
+}
+
+
+/* loading div */
+
+.loading-div {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    z-index: 1;
+}
+
+.loading-div.loaded {
+    width: 0px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+
+.loading-body {
+    overflow-y: hidden;
 }
