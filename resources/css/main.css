@@ -144,11 +144,15 @@ header div.container-fluid {
     flex-wrap: wrap;
 }
 
+.loading-body header {
+    z-index: 0;
+}
+
 header {
     position: sticky;
     top: 0px;
     background-color: #00171f;
-    z-index: 1;
+    z-index: 2;
     color: #00171f;
     padding: 0px 15px;
 }
@@ -570,22 +574,6 @@ header .btn:hover {
     .social-media .fa:before {
         font-size: x-large!important;
     }
-    /* different color */
-    /* header {
-        color: white !important;
-        background-color: #00171f !important;
-    }
-    nav ul li a .butt {
-        color: white;
-    }
-    .nav-a:after {
-        background-color: white;
-    }
-    .fa-instagram:before,
-    .fa-whatsapp:before,
-    .fa-facebook:before {
-        color: white;
-    } */
 }
 
 
@@ -599,28 +587,20 @@ header .btn:hover {
 }
 
 .loading-body .logo-tagline {
-    z-index: 2;
+    z-index: 3;
 }
 
 .logo-tagline {
-    /* height: 100vh; */
     top: 0px;
     padding: 0;
     z-index: -1;
-    position: relative;
     margin-left: auto;
     overflow-y: hidden;
 }
 
-.logo-tagline * {
-    z-index: 2!important;
-    position: relative;
+.loading-body .logo-tagline * {
+    z-index: 3!important;
 }
-
-
-/* .logo {
-     transform: translateY(0px)!important; 
-} */
 
 .logo-tagline svg g {
     fill: #00171f;
@@ -831,7 +811,7 @@ header .btn:hover {
 }
 
 .what-we-do .col-sm-3,
-.what-we-do .col-xl-3 {
+.what-we-do .col-lg-3 {
     padding: 5px;
 }
 
@@ -863,7 +843,22 @@ header .btn:hover {
     position: absolute;
 }
 
+@media screen and (max-width:1025px) {
+    .what-we-do .col-lg-3 h3 {
+        font-size: 1.35rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .what-we-do .col-lg-3 h3 {
+        font-size: 1.75rem;
+    }
+}
+
 @media screen and (max-width:766px) {
+    .what-we-do {
+        padding: 0!important;
+    }
     .what-we-do h5 {
         color: #007ea7;
         text-align: center;
@@ -1036,7 +1031,7 @@ footer .row {
     height: 100vh;
     background-color: #000;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 .loading-div.loaded * {
