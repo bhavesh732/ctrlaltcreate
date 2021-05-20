@@ -61,12 +61,42 @@ navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('navhide');
 });
 
-var mq = window.matchMedia("(max-width: 766px)");
+var mq = window.matchMedia("(max-width: 800px)");
 if (mq.matches) {
     function navhide() {
         navbutton.click();
     }
 } else {
+    // gsap.registerPlugin(ScrollTrigger);
+
+    // gsap.to(".logo", {
+    //     x: "70%",
+    //     y: 0,
+    //     scrollTrigger: {
+    //         trigger: ".logo",
+    //         toggleActions: "play complete reverse none",
+    //         start: "top top",
+    //         end: "bottom top",
+    //         scrub: true,
+    //         markers: true,
+    //         pin: true
+    //     }
+    // });
+
+    // gsap.from(".title", {
+    //     x: "70%",
+    //     y: 0,
+    //     scrollTrigger: {
+    //         trigger: ".logo-tagline",
+    //         toggleActions: "play complete reverse none",
+    //         start: "top top",
+    //         end: "bottom top",
+    //         scrub: 1,
+    //         markers: true,
+    //         pin: true
+    //     }
+    // });
+
     function navhide() {
 
     }

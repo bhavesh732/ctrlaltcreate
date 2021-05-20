@@ -594,40 +594,33 @@ header .btn:hover {
 
 /* home */
 
-.loading-body .home {
+.pin-spacer {
+    z-index: 0!important;
+}
+
+.loading-body .logo-tagline {
     z-index: 2;
 }
 
-.home {
+.logo-tagline {
     /* height: 100vh; */
     top: 0px;
     padding: 0;
     z-index: -1;
     position: relative;
-}
-
-.home .container-fluid,
-.home .container-fluid .row {
-    height: 100%;
-}
-
-
-/* .home .row .col-lg-6 {
-    display: flex;
-    height: 100%;
-} */
-
-.home .row .col-lg-12 .logo-tagline {
-    margin: auto;
-    position: relative;
+    margin-left: auto;
     overflow-y: hidden;
-    z-index: 2;
 }
 
 .logo-tagline * {
     z-index: 2!important;
     position: relative;
 }
+
+
+/* .logo {
+     transform: translateY(0px)!important; 
+} */
 
 .logo-tagline svg g {
     fill: #00171f;
@@ -700,15 +693,15 @@ header .btn:hover {
     width: 32.5%;
 }
 
-.home h1,
-.home h2,
+.logo-tagline h1,
+.logo-tagline h2,
 .what-we-do h1 {
     font-family: 'Bebas Neue';
 }
 
-.home h1,
-.home h2,
-.home h3 {
+.logo-tagline h1,
+.logo-tagline h2,
+.logo-tagline h3 {
     color: white;
 }
 
@@ -756,38 +749,20 @@ header .btn:hover {
     .logo-tagline {
         text-align: center;
     }
-    /* .home {
+    /* .logo-tagline {
         height: 160vh;
         padding: 0px;
     } */
     .logo-tagline img {
         width: 65%;
     }
-    .home .container-fluid,
+    .logo-tagline,
     .services {
         padding: 0px;
-    }
-    .home .row {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    /* .home .row .col-lg-6:nth-child(1) {
-        height: 55%;
-    }
-    .home .row .col-lg-6:nth-child(2) {
-        height: 40%;
-    } */
-    .home .row .col-lg-6 li {
-        font-size: 34.5px;
-        text-align: left;
     }
 }
 
 @media screen and (max-width:766px) {
-    /* .home {
-        height: 140vh;
-        padding: 0px;
-    } */
     .services .logo-tagline {
         padding: 0px;
     }
@@ -1062,6 +1037,10 @@ footer .row {
     background-color: #000;
     position: fixed;
     z-index: 2;
+}
+
+.loading-div.loaded * {
+    display: none;
 }
 
 .loading-div.loaded {
