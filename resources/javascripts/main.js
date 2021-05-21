@@ -67,52 +67,52 @@ if (mq.matches) {
         navbutton.click();
     }
 } else {
-    gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".title", {
-        x: "-110%",
-        y: 0,
-        scrollTrigger: {
-            trigger: ".what-we-do",
-            toggleActions: "play complete reverse none",
-            start: "center center",
-            endTrigger: ".what-we-do",
-            end: "bottom top",
-            scrub: true,
-            markers: false,
-            pin: true
-        }
-    });
+    // gsap.to(".title", {
+    //     x: "-110%",
+    //     y: 0,
+    //     scrollTrigger: {
+    //         trigger: ".what-we-do",
+    //         toggleActions: "play complete reverse none",
+    //         start: "center center",
+    //         endTrigger: ".what-we-do",
+    //         end: "bottom top",
+    //         scrub: true,
+    //         markers: false,
+    //         pin: true
+    //     }
+    // });
 
-    gsap.to(".what-we-do .oneRow", {
-        x: "110%",
-        y: 0,
-        scrollTrigger: {
-            trigger: ".what-we-do",
-            toggleActions: "play complete reverse none",
-            start: "top top+=200",
-            endTrigger: ".what-we-do",
-            end: "center top",
-            scrub: true,
-            markers: false,
-            pin: true
-        }
-    });
+    // gsap.to(".what-we-do .oneRow", {
+    //     x: "110%",
+    //     y: 0,
+    //     scrollTrigger: {
+    //         trigger: ".what-we-do",
+    //         toggleActions: "play complete reverse none",
+    //         start: "top top+=200",
+    //         endTrigger: ".what-we-do",
+    //         end: "center top",
+    //         scrub: true,
+    //         markers: false,
+    //         pin: true
+    //     }
+    // });
 
-    gsap.to(".what-we-do .twoRow", {
-        x: "-110%",
-        y: 0,
-        scrollTrigger: {
-            trigger: ".what-we-do",
-            toggleActions: "play complete reverse none",
-            start: "top top+=200",
-            endTrigger: ".what-we-do",
-            end: "center top",
-            scrub: true,
-            markers: false,
-            pin: true
-        }
-    });
+    // gsap.to(".what-we-do .twoRow", {
+    //     x: "-110%",
+    //     y: 0,
+    //     scrollTrigger: {
+    //         trigger: ".what-we-do",
+    //         toggleActions: "play complete reverse none",
+    //         start: "top top+=200",
+    //         endTrigger: ".what-we-do",
+    //         end: "center top",
+    //         scrub: true,
+    //         markers: false,
+    //         pin: true
+    //     }
+    // });
 
     // gsap.to(".tagline", {
     //     y: "-800px",

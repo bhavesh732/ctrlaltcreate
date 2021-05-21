@@ -675,6 +675,7 @@ header .btn:hover {
 
 .logo-tagline h1,
 .logo-tagline h2,
+.portfolio h1,
 .what-we-do h1 {
     font-family: 'Bebas Neue';
 }
@@ -760,7 +761,8 @@ header .btn:hover {
     text-align: center;
 }
 
-.what-we-do h1 {
+.what-we-do h1,
+.portfolio h1 {
     text-shadow: 2px 3.5px #00171f;
     font-size: 80px;
     margin-bottom: 0px;
@@ -769,20 +771,6 @@ header .btn:hover {
     text-align: center;
     position: relative;
 }
-
-
-/* .what-we-do h1:before {
-    content: 'What do We Do?';
-    text-shadow: none;
-    font-weight: 600;
-    font-size: 100px;
-    position: absolute;
-    z-index: 1;
-    color: rgba(0, 23, 31, 0.1);
-    font-family: 'Dancing Script';
-    top: -90px;
-    right: 0;
-} */
 
 .what-we-do .card {
     background-color: white;
@@ -800,7 +788,8 @@ header .btn:hover {
     -moz-transition: 1s;
 }
 
-.what-we-do .card h3 {
+.what-we-do .card h3,
+.portfolio .card h3 {
     font-weight: 600;
 }
 
@@ -811,7 +800,8 @@ header .btn:hover {
 }
 
 .what-we-do .col-sm-3,
-.what-we-do .col-lg-3 {
+.what-we-do .col-lg-3,
+.portfolio .col-lg-6 {
     padding: 5px;
 }
 
@@ -1047,4 +1037,65 @@ footer .row {
 
 .loading-body {
     overflow-y: hidden;
+}
+
+
+/* portfolio */
+
+.portfolio .card {
+    padding: 5px;
+    background-color: #00171f;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.portfolio .card:hover {
+    box-shadow: 0px 5px 10px white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.portfolio .card-body {
+    position: relative;
+}
+
+.portfolio .view-project {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    padding: 5px 15px;
+    border: none;
+    border: 2px solid #045874;
+    background-color: #00171f;
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.portfolio .view-project:hover {
+    background-color: #007ea7;
+    color: #00171f;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.portfolio .card h3 {
+    color: #fff;
+    text-shadow: 2px 3.5px #007ea7;
+}
+
+.portfolio .card .card-text {
+    color: #fff;
+}
+
+@media screen and (max-width: 766px) {
+    .portfolio .card h3 {
+        font-size: large;
+    }
 }

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="resources/bootstrap/all.min.css">
+    <link rel="stylesheet" href="resources/bootstrap/fontawesome.min.css">
+    <link rel="stylesheet" href="resources/bootstrap/bootstrap-social.css">
+    <link rel="stylesheet" href="resources/bootstrap/bootstrap-social.min.css.map">
+    <link rel="stylesheet" href="resources/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <meta name="keywords" content="Ctrl Alt Create, Digital Marketing Google, Web Development, Web Development Company, SEO, SEO Analyst, App Developer, App Development, Social media management, Social media marketing">
+    <meta name="description" content="We ctrlaltcreate.in create your website, mobile application and do your digital marketing and SEO with social media management for your best online presence.">
+    <meta name="google-site-verification" content="O5ld7Vl7bi9rjRwKZFbFd_UnKiVZpzcAHoRvBELPayg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CCNKH9RVD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5CCNKH9RVD');
+    </script>
+    <style>
+        body,
+        html {
+            margin: 0;
+        }
+        
+        .scroller {
+            height: 100vh;
+        }
+        
+        .orange {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100vh;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #753500;
+        }
+        
+        .text {
+            color: #fff;
+        }
+        
+        .black {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100vh;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #070707;
+        }
+        
+        .blue {
+            height: 100vh;
+            background-color: #00026d;
+        }
+        
+        .text-wrap {
+            position: relative;
+            overflow: hidden;
+            width: 450px;
+            height: 80vh;
+        }
+        
+        .panel-text {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            right: 0%;
+            bottom: 0%;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: center;
+            background-color: #070707;
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        
+        .panel-text.blue-text {
+            color: blue;
+        }
+        
+        .panel-text.red-text {
+            color: red;
+        }
+        
+        .panel-text.purple-text {
+            color: purple;
+        }
+        
+        .panel-text.orange-text {
+            color: orange;
+        }
+        
+        .p-wrap {
+            position: relative;
+            overflow: hidden;
+            width: 450px;
+            height: 80vh;
+        }
+        
+        .panel {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            right: 0%;
+            bottom: 0%;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .panel._2 {
+            z-index: 1;
+        }
+        
+        .panel.blue {
+            z-index: auto;
+        }
+        
+        .panel.red {
+            z-index: auto;
+            background-color: red;
+            background-image: none;
+        }
+        
+        .panel.orange {
+            z-index: auto;
+            background-color: #cf5d00;
+            background-image: none;
+        }
+        
+        .panel.purple {
+            z-index: auto;
+            background-color: #808;
+            background-image: none;
+        }
+        /*infinite scrolling*/
+        
+        body {
+            background: #111;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .gallery {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .cards {
+            position: absolute;
+            width: 14rem;
+            height: 18rem;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cards li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 14rem;
+            height: 18rem;
+            text-align: center;
+            line-height: 18rem;
+            font-size: 2rem;
+            font-family: sans-serif;
+            background-color: #9d7cce;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 0.8rem;
+        }
+        
+        .actions {
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        button {
+            display: inline-block;
+            outline: none;
+            border: none;
+            padding: 8px 14px;
+            background: #414141;
+            background-image: -webkit-linear-gradient(top, #575757, #414141);
+            background-image: -moz-linear-gradient(top, #575757, #414141);
+            background-image: -ms-linear-gradient(top, #575757, #414141);
+            background-image: -o-linear-gradient(top, #575757, #414141);
+            background-image: linear-gradient(to bottom, #575757, #414141);
+            text-shadow: 0px 1px 0px #414141;
+            -webkit-box-shadow: 0px 1px 0px 414141;
+            -moz-box-shadow: 0px 1px 0px 414141;
+            box-shadow: 0px 1px 0px 414141;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 auto 10px;
+            -webkit-border-radius: 4;
+            -moz-border-radius: 4;
+            border-radius: 4px;
+            padding: 12px 25px;
+            font-family: "Signika Negative", sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        
+        button:hover {
+            background: #57a818;
+            background-image: -webkit-linear-gradient(top, #57a818, #4d9916);
+            background-image: -moz-linear-gradient(top, #57a818, #4d9916);
+            background-image: -ms-linear-gradient(top, #57a818, #4d9916);
+            background-image: -o-linear-gradient(top, #57a818, #4d9916);
+            background-image: linear-gradient(to bottom, #57a818, #4d9916);
+            text-shadow: 0px 1px 0px #32610e;
+            -webkit-box-shadow: 0px 1px 0px fefefe;
+            -moz-box-shadow: 0px 1px 0px fefefe;
+            box-shadow: 0px 1px 0px fefefe;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        button {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        
+        a {
+            color: #88ce02;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>Ctrl Alt Create | Home</title>
+</head>
+
+<body class="">
+
+    <div class="scroller">
+
+        <!-- <section class="orange">
+            <div class="container-fluid p-xl-5 p-3 pl-lg-0 pr-lg-0" id="services">
+                <div class="what-we-do p-3">
+                    <h1 class="title">What do We Do?</h1>
+                    <div class="row oneRow p-1">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Web Development
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#webModal">Learn More</button>
+                                    <i class="fas fa-globe ml-auto" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Mobile Application Development
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#mobileModal">Learn More</button>
+                                    <i class="fas fa-mobile" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Search Engine Optimization
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#seoModal">Learn More</button>
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Social Media Marketing
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#smmModal">Learn More</button>
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-1 pt-0 twoRow">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Google Ads
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#googleAdsModal">Learn More</button>
+                                    <i class="fa fa-google"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Instagram Ads
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#instaadsModal">Learn More</button>
+                                    <i class="fa fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Email Marketing
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#emailModal">Learn More</button>
+                                    <i class="fa fa-envelope-open-text"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Digital Marketing
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#digitalModal">Learn More</button>
+                                </div>
+                                <i class="fa fa-mail-bulk"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="black">
+
+            <div class="text-wrap">
+                <div class="panel-text blue-text">Blue</div>
+                <div class="panel-text red-text">Red</div>
+                <div class="panel-text orange-text">Orange</div>
+                <div class="panel-text purple-text">Purple</div>
+            </div>
+
+            <div class="p-wrap">
+                <div class="panel blue"></div>
+                <div class="panel red"></div>
+                <div class="panel orange"></div>
+                <div class="panel purple"></div>
+            </div>
+
+        </section>
+
+
+        <section class="blue"></section> -->
+        <div class="gallery">
+            <ul class="cards">
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="resources/bootstrap/fontawesome.min.js"></script>
+    <script src="resources/bootstrap/jquery.min.js"></script>
+    <script src="resources/bootstrap/popper.min.js"></script>
+    <script src="resources/bootstrap/bootstrap.min.js"></script>
+    <script src="resources/gsap/gsap.min.js"></script>
+    <script src="resources/gsap/smooth-scrollbar.js"></script>
+    <script src="resources/gsap/ScrollTrigger.js"></script>
+    <script src="resources/javascripts/smoothscroll.js"></script>
+    <script src="resources/javascripts/main.js"></script>
+
+</body>
+
+</html>
