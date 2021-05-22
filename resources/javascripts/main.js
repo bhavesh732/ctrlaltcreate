@@ -11,7 +11,7 @@ function removeLoading() {
     setTimeout(() => {
         $('.loading-div').addClass('loaded');
         $('.loading-body').removeClass('loading-body');
-    }, 2000)
+    }, 1000)
 }
 
 var prevScrollpos = window.pageYOffset;
