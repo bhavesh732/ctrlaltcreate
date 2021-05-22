@@ -1013,6 +1013,25 @@ footer .row {
     color: #fff;
 }
 
+.modal-body {
+    color: #fff;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.modal-body .fas,
+.modal-body .fa {
+    margin: auto;
+    padding: 10px;
+}
+
+.modal-body .fas:before,
+.modal-body .fa:before {
+    font-size: 70px!important;
+}
+
 
 /* loading div */
 
@@ -1097,5 +1116,12 @@ footer .row {
 @media screen and (max-width: 766px) {
     .portfolio .card h3 {
         font-size: large;
+    }
+    .portfolio h1 {
+        font-size: xxx-large;
+        margin-bottom: 0px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
     }
 }
